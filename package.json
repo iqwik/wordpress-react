@@ -1,0 +1,34 @@
+{
+  "name": "wordpress_react",
+  "version": "1.0.0",
+  "description": "Using React-js in Wordpress",
+  "author": "Artem Zubarev aka iqwik",
+  "license": "1 GNU V2+, MIT",
+  "scripts": {
+    "build": "wp-scripts build --output-path=static",
+    "dev": "wp-scripts start --output-path=static --webpack--devtool=inline-cheap-source-map",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json"
+  },
+  "dependencies": {
+    "@wordpress/api-fetch": "^4.0.0",
+    "@wordpress/babel-preset-default": "^5.2.2",
+    "@wordpress/core-data": "^2.26.3",
+    "@wordpress/data": "^4.27.3",
+    "@wordpress/scripts": "^15.0.1",
+    "axios": "^0.21.0",
+    "classnames": "^2.3.1",
+    "history": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "browser-sync-webpack-plugin": "^2.3.0"
+  }
+}

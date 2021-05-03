@@ -1,0 +1,24 @@
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+# Баг на quotes - https://youtrack.jetbrains.com/issue/IDEA-232474
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[{*.js,*.jsx}]
+spaces_around_operators = true
+ij_javascript_use_double_quotes = false
+ij_javascript_force_quote_style = true
+ij_javascript_spaces_within_brackets = true
+ij_javascript_spaces_within_imports = true
+ij_javascript_spaces_within_interpolation_expressions = true
+
